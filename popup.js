@@ -9,6 +9,17 @@ const STORAGE_KEY = "openai_api_key";
 apikey.value = localStorage.getItem(STORAGE_KEY) || "";
 
 document.getElementById("searchBtn").addEventListener("click", async () => {
+    await activate_search();
+});
+
+search.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        activate_search();
+    }
+}); 
+
+async function activate_search() {
     let url = await getAIResponse(search.value);
 
     url = url.trim();
@@ -20,7 +31,7 @@ document.getElementById("searchBtn").addEventListener("click", async () => {
     browser.tabs.create({
         url: url
     });
-});
+}
 
 showbtn.addEventListener("click", showKey); 
 
