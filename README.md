@@ -6,3 +6,4 @@ After adding to Firefox, click the magyfying glass on the top right of your scre
 
 ## How to format a search
 It is better to ask a question than to state keywords as you could in google. For example, say "how to bake a cake" or even "cake instructions" as opposed to "bake cake". 
+You also may want to say what you are doing with the thing being searched, for example if you search "ballpoint pens" it could take you to the wikipedia page or amazon, you may want to say "what are ballpoint pens" or "buying ballpoint pens".
