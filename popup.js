@@ -48,6 +48,9 @@ async function getAIResponse(AISearch) {
         },
         body: JSON.stringify({
             model: "gpt-4.1-mini",
+            //model: "gpt-4o-mini-search-preview",
+            //tools: [{ "type": "web_search" }],
+            temperature: 0,
             input: `Search the internet and return only a url that corresponds with this search, do not include any other text \"${AISearch}\"`
         })
     });
